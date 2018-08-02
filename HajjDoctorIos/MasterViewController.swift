@@ -31,6 +31,7 @@ class MasterViewController: UIViewController,SFSpeechRecognizerDelegate {
     var recognitionTask: SFSpeechRecognitionTask?
     var node : AVAudioInputNode?
     @IBOutlet weak var input: UITextView!
+    var isAppending = false
     override func viewDidLoad() {
         super.viewDidLoad()
         authorizeSpeech()
@@ -43,6 +44,11 @@ class MasterViewController: UIViewController,SFSpeechRecognizerDelegate {
         recordButton.addTarget(self, action: #selector(MasterViewController.stop), for: UIControlEvents.touchUpInside)
         recordView.addSubview(recordButton)
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        isAppending = false
     }
     
     @objc func record() {
@@ -63,7 +69,7 @@ class MasterViewController: UIViewController,SFSpeechRecognizerDelegate {
     }
     
     @objc func stop() {
-        print("Stop")
+        isAppending = true
 //        self.progressTimer.invalidate()
         stopRecording()
     }
@@ -127,12 +133,14 @@ class MasterViewController: UIViewController,SFSpeechRecognizerDelegate {
         }
         recognitionRequest = SFSpeechAudioBufferRecognitionRequest()
         guard let recognitionRequest = recognitionRequest else {return}
-//        print("recognizing")
-//        recordButton.setTitle("Stop record", for: .normal)
         recognitionTask = speechRecognizer?.recognitionTask(with: recognitionRequest, resultHandler: {result,error in
             if let result = result {
                 print(result.bestTranscription.formattedString+"\(result.isFinal)")
-                self.input.text = result.bestTranscription.formattedString
+                if self.isAppending {
+                    self.input.text.append(result.bestTranscription.formattedString)
+                }else {
+                    self.input.text = result.bestTranscription.formattedString
+                }
 //                if error != nil || result.isFinal {
 //                    self.stopRecording()
 //                }
@@ -150,7 +158,6 @@ class MasterViewController: UIViewController,SFSpeechRecognizerDelegate {
     private func stopRecording() {
         audioEngine.stop()
         recognitionRequest?.endAudio()
-        recordButton.setTitle("Tap to Record", for: .normal)
         // Cancel the previous task if it's running
         if let recognitionTask = recognitionTask {
             recognitionTask.cancel()
