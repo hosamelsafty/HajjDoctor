@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		426D0AAE863862FF5B90AE01 /* Pods_HajjDoctorIos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0826480F54D4FB70B77FC5E /* Pods_HajjDoctorIos.framework */; };
 		F4A59584211232B90009D8D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A59583211232B90009D8D3 /* AppDelegate.swift */; };
 		F4A59586211232B90009D8D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A59585211232B90009D8D3 /* ViewController.swift */; };
 		F4A59589211232B90009D8D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4A59587211232B90009D8D3 /* Main.storyboard */; };
 		F4A5958C211232B90009D8D3 /* HajjDoctorIos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F4A5958A211232B90009D8D3 /* HajjDoctorIos.xcdatamodeld */; };
 		F4A5958E211232BB0009D8D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4A5958D211232BB0009D8D3 /* Assets.xcassets */; };
 		F4A59591211232BB0009D8D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4A5958F211232BB0009D8D3 /* LaunchScreen.storyboard */; };
+		F4C94F41211268B80097EADC /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C94F40211268B80097EADC /* SplitViewController.swift */; };
+		F4C94F432112A4360097EADC /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C94F422112A4360097EADC /* MapViewController.swift */; };
+		F4F84F3321124BE10088F0F2 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F84F3221124BE10088F0F2 /* MasterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D5CFDB54E4DAE10B722213D /* Pods-HajjDoctorIos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HajjDoctorIos.release.xcconfig"; path = "Pods/Target Support Files/Pods-HajjDoctorIos/Pods-HajjDoctorIos.release.xcconfig"; sourceTree = "<group>"; };
+		CC18DF8A85C26A600C3A198F /* Pods-HajjDoctorIos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HajjDoctorIos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HajjDoctorIos/Pods-HajjDoctorIos.debug.xcconfig"; sourceTree = "<group>"; };
+		F0826480F54D4FB70B77FC5E /* Pods_HajjDoctorIos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HajjDoctorIos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4A59580211232B90009D8D3 /* HajjDoctorIos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HajjDoctorIos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4A59583211232B90009D8D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4A59585211232B90009D8D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +31,9 @@
 		F4A5958D211232BB0009D8D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4A59590211232BB0009D8D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4A59592211232BB0009D8D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4C94F40211268B80097EADC /* SplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
+		F4C94F422112A4360097EADC /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		F4F84F3221124BE10088F0F2 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				426D0AAE863862FF5B90AE01 /* Pods_HajjDoctorIos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D8D1B766FA33E579EF116F7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CC18DF8A85C26A600C3A198F /* Pods-HajjDoctorIos.debug.xcconfig */,
+				1D5CFDB54E4DAE10B722213D /* Pods-HajjDoctorIos.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E87A02F36374CAA75A48F31E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0826480F54D4FB70B77FC5E /* Pods_HajjDoctorIos.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F4A59577211232B90009D8D3 = {
 			isa = PBXGroup;
 			children = (
 				F4A59582211232B90009D8D3 /* HajjDoctorIos */,
 				F4A59581211232B90009D8D3 /* Products */,
+				2D8D1B766FA33E579EF116F7 /* Pods */,
+				E87A02F36374CAA75A48F31E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,11 +88,14 @@
 			children = (
 				F4A59583211232B90009D8D3 /* AppDelegate.swift */,
 				F4A59585211232B90009D8D3 /* ViewController.swift */,
+				F4F84F3221124BE10088F0F2 /* MasterViewController.swift */,
+				F4C94F422112A4360097EADC /* MapViewController.swift */,
 				F4A59587211232B90009D8D3 /* Main.storyboard */,
 				F4A5958D211232BB0009D8D3 /* Assets.xcassets */,
 				F4A5958F211232BB0009D8D3 /* LaunchScreen.storyboard */,
 				F4A59592211232BB0009D8D3 /* Info.plist */,
 				F4A5958A211232B90009D8D3 /* HajjDoctorIos.xcdatamodeld */,
+				F4C94F40211268B80097EADC /* SplitViewController.swift */,
 			);
 			path = HajjDoctorIos;
 			sourceTree = "<group>";
@@ -74,9 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4A59595211232BB0009D8D3 /* Build configuration list for PBXNativeTarget "HajjDoctorIos" */;
 			buildPhases = (
+				F3062DC786B6D5C4540B2FBC /* [CP] Check Pods Manifest.lock */,
 				F4A5957C211232B90009D8D3 /* Sources */,
 				F4A5957D211232B90009D8D3 /* Frameworks */,
 				F4A5957E211232B90009D8D3 /* Resources */,
+				DB91BDB1D3E438088BD1A8D2 /* [CP] Copy Pods Resources */,
+				4426EDDCBBD8A09905F558B4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,11 +169,73 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4426EDDCBBD8A09905F558B4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HajjDoctorIos/Pods-HajjDoctorIos-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RecordButton/RecordButton.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RecordButton.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HajjDoctorIos/Pods-HajjDoctorIos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB91BDB1D3E438088BD1A8D2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HajjDoctorIos/Pods-HajjDoctorIos-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HajjDoctorIos/Pods-HajjDoctorIos-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3062DC786B6D5C4540B2FBC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HajjDoctorIos-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F4A5957C211232B90009D8D3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4C94F41211268B80097EADC /* SplitViewController.swift in Sources */,
+				F4C94F432112A4360097EADC /* MapViewController.swift in Sources */,
+				F4F84F3321124BE10088F0F2 /* MasterViewController.swift in Sources */,
 				F4A5958C211232B90009D8D3 /* HajjDoctorIos.xcdatamodeld in Sources */,
 				F4A59586211232B90009D8D3 /* ViewController.swift in Sources */,
 				F4A59584211232B90009D8D3 /* AppDelegate.swift in Sources */,
@@ -282,9 +380,11 @@
 		};
 		F4A59596211232BB0009D8D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC18DF8A85C26A600C3A198F /* Pods-HajjDoctorIos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WUR57FWBC3;
 				INFOPLIST_FILE = HajjDoctorIos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -299,9 +399,11 @@
 		};
 		F4A59597211232BB0009D8D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D5CFDB54E4DAE10B722213D /* Pods-HajjDoctorIos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WUR57FWBC3;
 				INFOPLIST_FILE = HajjDoctorIos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

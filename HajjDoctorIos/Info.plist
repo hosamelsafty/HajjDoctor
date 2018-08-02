@@ -2,6 +2,19 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>using location</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>using location</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>googlechromes</string>
+		<string>comgooglemaps</string>
+	</array>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Please state how do you feel now?</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>Speak and watch your words become text or say a color to see the box change colors.</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
