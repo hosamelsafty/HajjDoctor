@@ -16,7 +16,15 @@
 		F4A59591211232BB0009D8D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4A5958F211232BB0009D8D3 /* LaunchScreen.storyboard */; };
 		F4C94F41211268B80097EADC /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C94F40211268B80097EADC /* SplitViewController.swift */; };
 		F4C94F432112A4360097EADC /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C94F422112A4360097EADC /* MapViewController.swift */; };
-		F4F84F3321124BE10088F0F2 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F84F3221124BE10088F0F2 /* MasterViewController.swift */; };
+		F4C94F4921136D630097EADC /* RoundedShadedUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C94F4821136D630097EADC /* RoundedShadedUIView.swift */; };
+		F4C94F4B21136F940097EADC /* MasterUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C94F4A21136F940097EADC /* MasterUIViewController.swift */; };
+		F4C94F4D21138BA20097EADC /* MedicineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C94F4C21138BA20097EADC /* MedicineTableViewController.swift */; };
+		F4C94F5221138D130097EADC /* MedicineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C94F5021138D130097EADC /* MedicineTableViewCell.swift */; };
+		F4C94F5321138D130097EADC /* MedicineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4C94F5121138D130097EADC /* MedicineTableViewCell.xib */; };
+		F4C94F552113A4210097EADC /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C94F542113A4210097EADC /* File.swift */; };
+		F4C94F5E2113F0FA0097EADC /* 1001fonts-vibra-eula.txt in Resources */ = {isa = PBXBuildFile; fileRef = F4C94F5C2113F0FA0097EADC /* 1001fonts-vibra-eula.txt */; };
+		F4C94F602113FDDF0097EADC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C94F5F2113FDDF0097EADC /* LoginViewController.swift */; };
+		F4C94F612114035C0097EADC /* VIBRA-Reg - Copie.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4C94F632114035C0097EADC /* VIBRA-Reg - Copie.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +41,15 @@
 		F4A59592211232BB0009D8D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4C94F40211268B80097EADC /* SplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
 		F4C94F422112A4360097EADC /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		F4F84F3221124BE10088F0F2 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		F4C94F4821136D630097EADC /* RoundedShadedUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadedUIView.swift; sourceTree = "<group>"; };
+		F4C94F4A21136F940097EADC /* MasterUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterUIViewController.swift; sourceTree = "<group>"; };
+		F4C94F4C21138BA20097EADC /* MedicineTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineTableViewController.swift; sourceTree = "<group>"; };
+		F4C94F5021138D130097EADC /* MedicineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineTableViewCell.swift; sourceTree = "<group>"; };
+		F4C94F5121138D130097EADC /* MedicineTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MedicineTableViewCell.xib; sourceTree = "<group>"; };
+		F4C94F542113A4210097EADC /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		F4C94F5C2113F0FA0097EADC /* 1001fonts-vibra-eula.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1001fonts-vibra-eula.txt"; sourceTree = "<group>"; };
+		F4C94F5F2113FDDF0097EADC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F4C94F622114035C0097EADC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file; name = Base; path = "Base.lproj/VIBRA-Reg - Copie.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,9 +102,9 @@
 		F4A59582211232B90009D8D3 /* HajjDoctorIos */ = {
 			isa = PBXGroup;
 			children = (
+				F4C94F5A2113F0E00097EADC /* Resources */,
 				F4A59583211232B90009D8D3 /* AppDelegate.swift */,
 				F4A59585211232B90009D8D3 /* ViewController.swift */,
-				F4F84F3221124BE10088F0F2 /* MasterViewController.swift */,
 				F4C94F422112A4360097EADC /* MapViewController.swift */,
 				F4A59587211232B90009D8D3 /* Main.storyboard */,
 				F4A5958D211232BB0009D8D3 /* Assets.xcassets */,
@@ -96,8 +112,24 @@
 				F4A59592211232BB0009D8D3 /* Info.plist */,
 				F4A5958A211232B90009D8D3 /* HajjDoctorIos.xcdatamodeld */,
 				F4C94F40211268B80097EADC /* SplitViewController.swift */,
+				F4C94F4821136D630097EADC /* RoundedShadedUIView.swift */,
+				F4C94F4A21136F940097EADC /* MasterUIViewController.swift */,
+				F4C94F5F2113FDDF0097EADC /* LoginViewController.swift */,
+				F4C94F4C21138BA20097EADC /* MedicineTableViewController.swift */,
+				F4C94F5021138D130097EADC /* MedicineTableViewCell.swift */,
+				F4C94F5121138D130097EADC /* MedicineTableViewCell.xib */,
+				F4C94F542113A4210097EADC /* File.swift */,
 			);
 			path = HajjDoctorIos;
+			sourceTree = "<group>";
+		};
+		F4C94F5A2113F0E00097EADC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F4C94F5C2113F0FA0097EADC /* 1001fonts-vibra-eula.txt */,
+				F4C94F632114035C0097EADC /* VIBRA-Reg - Copie.ttf */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,7 +195,10 @@
 			files = (
 				F4A59591211232BB0009D8D3 /* LaunchScreen.storyboard in Resources */,
 				F4A5958E211232BB0009D8D3 /* Assets.xcassets in Resources */,
+				F4C94F612114035C0097EADC /* VIBRA-Reg - Copie.ttf in Resources */,
 				F4A59589211232B90009D8D3 /* Main.storyboard in Resources */,
+				F4C94F5321138D130097EADC /* MedicineTableViewCell.xib in Resources */,
+				F4C94F5E2113F0FA0097EADC /* 1001fonts-vibra-eula.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,12 +268,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4C94F4B21136F940097EADC /* MasterUIViewController.swift in Sources */,
+				F4C94F4D21138BA20097EADC /* MedicineTableViewController.swift in Sources */,
 				F4C94F41211268B80097EADC /* SplitViewController.swift in Sources */,
 				F4C94F432112A4360097EADC /* MapViewController.swift in Sources */,
-				F4F84F3321124BE10088F0F2 /* MasterViewController.swift in Sources */,
 				F4A5958C211232B90009D8D3 /* HajjDoctorIos.xcdatamodeld in Sources */,
 				F4A59586211232B90009D8D3 /* ViewController.swift in Sources */,
 				F4A59584211232B90009D8D3 /* AppDelegate.swift in Sources */,
+				F4C94F4921136D630097EADC /* RoundedShadedUIView.swift in Sources */,
+				F4C94F552113A4210097EADC /* File.swift in Sources */,
+				F4C94F5221138D130097EADC /* MedicineTableViewCell.swift in Sources */,
+				F4C94F602113FDDF0097EADC /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +299,14 @@
 				F4A59590211232BB0009D8D3 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F4C94F632114035C0097EADC /* VIBRA-Reg - Copie.ttf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4C94F622114035C0097EADC /* Base */,
+			);
+			name = "VIBRA-Reg - Copie.ttf";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

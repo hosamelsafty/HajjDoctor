@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="medicineCell" selectionStyle="default" indentationWidth="10" rowHeight="103" id="KGk-i7-Jjw" customClass="MedicineTableViewCell" customModule="HajjDoctorIos" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="473" height="103"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="473" height="102.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Medicine" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gRB-YR-Sb3">
+                        <rect key="frame" x="64" y="11" width="379" height="21"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VTM-rt-Z6W">
+                        <rect key="frame" x="64" y="32" width="379" height="36.5"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <switch opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tf8-qd-rtJ">
+                        <rect key="frame" x="10" y="10" width="51" height="31"/>
+                    </switch>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0 SR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f4n-IL-BtM">
+                        <rect key="frame" x="379" y="71.5" width="64" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="f4n-IL-BtM" firstAttribute="top" secondItem="VTM-rt-Z6W" secondAttribute="bottom" constant="3" id="7xX-7P-agx"/>
+                    <constraint firstItem="VTM-rt-Z6W" firstAttribute="top" secondItem="gRB-YR-Sb3" secondAttribute="bottom" id="9q6-0T-ijo"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="gRB-YR-Sb3" secondAttribute="trailing" constant="10" id="9ue-A2-Qb2"/>
+                    <constraint firstItem="f4n-IL-BtM" firstAttribute="leading" relation="lessThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="379" id="Bfk-eN-tOG"/>
+                    <constraint firstItem="VTM-rt-Z6W" firstAttribute="trailing" secondItem="gRB-YR-Sb3" secondAttribute="trailing" id="BvS-Cb-8gI"/>
+                    <constraint firstItem="Tf8-qd-rtJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="JLV-Bp-OsS"/>
+                    <constraint firstItem="f4n-IL-BtM" firstAttribute="trailing" secondItem="VTM-rt-Z6W" secondAttribute="trailing" id="R95-tF-7k8"/>
+                    <constraint firstItem="Tf8-qd-rtJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="b3X-fX-Hhd"/>
+                    <constraint firstItem="gRB-YR-Sb3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="cNC-Ii-UNk"/>
+                    <constraint firstItem="VTM-rt-Z6W" firstAttribute="leading" secondItem="gRB-YR-Sb3" secondAttribute="leading" id="fll-3j-VYE"/>
+                    <constraint firstAttribute="bottom" secondItem="f4n-IL-BtM" secondAttribute="bottom" constant="10" id="gFb-tk-Noj"/>
+                    <constraint firstItem="gRB-YR-Sb3" firstAttribute="leading" secondItem="Tf8-qd-rtJ" secondAttribute="trailing" constant="5" id="pE9-y7-txp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="medicineDescription" destination="VTM-rt-Z6W" id="IeH-nD-xdi"/>
+                <outlet property="medicineName" destination="gRB-YR-Sb3" id="ADB-KI-I80"/>
+                <outlet property="medicineSelected" destination="Tf8-qd-rtJ" id="Bep-Y5-SY4"/>
+                <outlet property="price" destination="f4n-IL-BtM" id="iXG-s1-p88"/>
+            </connections>
+            <point key="canvasLocation" x="110.5" y="77.5"/>
+        </tableViewCell>
+    </objects>
+</document>

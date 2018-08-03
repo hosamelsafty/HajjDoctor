@@ -11,7 +11,7 @@ import Speech
 import RecordButton
 
 
-class MasterViewController: UIViewController,SFSpeechRecognizerDelegate {
+class MainViewController: UIViewController,SFSpeechRecognizerDelegate {
     
     
     @IBOutlet weak var logo: UIImageView!{
@@ -32,6 +32,7 @@ class MasterViewController: UIViewController,SFSpeechRecognizerDelegate {
     var node : AVAudioInputNode?
     @IBOutlet weak var input: UITextView!
     var isAppending = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         authorizeSpeech()
@@ -40,8 +41,8 @@ class MasterViewController: UIViewController,SFSpeechRecognizerDelegate {
         recordButton = RecordButton(frame: CGRect(x: 0,y: 0,width: 70,height: 70))
 //        recordButton.progressColor = .red
         recordButton.closeWhenFinished = false
-        recordButton.addTarget(self, action: #selector(MasterViewController.record), for: .touchDown)
-        recordButton.addTarget(self, action: #selector(MasterViewController.stop), for: UIControlEvents.touchUpInside)
+        recordButton.addTarget(self, action: #selector(MainViewController.record), for: .touchDown)
+        recordButton.addTarget(self, action: #selector(MainViewController.stop), for: UIControlEvents.touchUpInside)
         recordView.addSubview(recordButton)
         // Do any additional setup after loading the view.
     }
@@ -167,14 +168,18 @@ class MasterViewController: UIViewController,SFSpeechRecognizerDelegate {
         self.recognitionTask = nil
         node?.removeTap(onBus: 0)
     }
-    /*
+    
+    
      // MARK: - Navigation
      
      // In a storyboard-based application, you will often want to do a little preparation before navigation
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
      // Get the new view controller using segue.destinationViewController.
      // Pass the selected object to the new view controller.
+        if let destination = segue.destination as? ResultViewController {
+            
+        }
      }
-     */
+ 
     
 }
